@@ -18,7 +18,7 @@ const ChatBubble = ({ message, author, notMath }) => {
     <div className={`chat ${isSelf ? "chat-start" : "chat-end"}`}>
       <div className="chat-header">
         {/* <div className={`chat-message ${messageClass}`}> */}
-        <div>{message.author}</div>
+        <div>{message.author}:</div>
         <time className="text-xs opacity-50 ml-2">{message.time || '12:00pm'}</time>
         {/* </div> */}
       </div>
